@@ -53,8 +53,33 @@
             line-height: 1.5;
         }
 
-        .profile-box .name {
-            font-weight: bold;
+        .photo-box {
+            margin: 50px 20px;
+        }
+
+        .photo-box img {
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            margin: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .extra-box {
+            background-color: #ffffff;
+            margin: 30px auto;
+            padding: 20px;
+            width: 80%;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .extra-box h2 {
+            color: #333;
+            font-size: 1.2rem;
         }
 
         footer {
@@ -98,22 +123,41 @@
             <img src="img/donk.jpg" alt="Person 1">
             <h3 class="name">張廷瑋</h3>
             <p><strong>生日：</strong>94/08/31</p>
-            <p><strong>興趣：</strong>看電影，出去走走</p>
+            <p><strong>興趣：</strong>看電影，出去走走，打打遊戲</p>
             <p><strong>喜歡二次元，我是手把哥</strong></p>
         </div>
     </div>
+
+    <!-- 新增照片區域 -->
+    <div class="photo-box">
+        <img src="img/apex.jpg" alt="照片 1">
+        <img src="img/image.66jpg.png" alt="照片 2">
+        <img src="img/神話2.jpg" alt="照片 3">
+    </div>
+    <div style="text-align: center; margin: 20px 0;">
+        <iframe width="560" height="315" 
+            src="https://outplayed.tv/media/wLb1yV" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+        
+    </div>
+    <!-- 新增框框 -->
+    <div class="extra-box">
+        <h2>更多資訊:</h2>
+        <p>如果要找我玩遊戲我不會到，電子陽痿。</p>
+    </div>
+
     <footer>
         <h4>聯絡我:</h4>
         <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
             <input type="email" name="email" placeholder="輸入電子郵件" required>
-            <input type="email" name="email" placeholder="輸入訊息" required>
+            <input type="text" name="message" placeholder="輸入訊息" required>
             <br>
             <button type="submit">提交</button>
-            
-                <br>
-                
         </form>
     </footer>
-
 </body>
 </html>
